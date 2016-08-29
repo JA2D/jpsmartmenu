@@ -1,0 +1,162 @@
+{
+	"month":
+	[
+		{ 
+			"label":"week-1",
+			"week":[{"breakfast":{"name":"Pancakes",
+				"desc": "Pancakes",
+				"cuisine":"American",			
+				"recipe":"",
+				"recipe_links":["https://www.buzzfeed.com/deenashanker/healthy-easy-breakfasts-your-kids-will-love"],
+				"groceries":{"indian":"","american":"pancake mix, maple syrup"},
+				"type":"vegetarian",
+				"image":"pancakes"
+			},	
+			"lunch":{"name":"Shrimp Mango curry",
+					"desc": "Shrimp and raw mango or Shrimp and drumstick",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_links":[""],
+					"groceries":{"indian":"mango or drumstick, tamarind, onion, tomato, garlic, sesame oil,curry leaves, chilli/coriander/jeera powder","american":"shrimp"},
+					"type":"non-vegetarian"
+					
+			},
+			"dinner":{"name":"Upma",
+					"desc": "",
+					"cuisine":"Indian",			
+					"recipe":"Add mustard seeds, urad dhal, curry leaves, channa dhal, two spoons oil. Use water three times the amount of Rava. To the tadka boil water, add salt",
+					"recipe_links":[""],
+					"groceries":{"indian":"wheat rava or semolina,coconut,mixed veggies","american":""},
+					"type":"vegetarian"
+			}},
+			{"breakfast":{"name":"Egg omelette",
+				"desc": "Egg omelette",
+				"cuisine":"American",			
+				"recipe":"",
+				"recipe_link":[""],
+				"groceries":{"indian":"onion","american":"eggs"},
+				"type":"vegetarian_egg"
+			},	
+			"lunch":{"name":"Radish Sambar, potato fry",
+					"desc": "Radish Sambar, potato fry",
+					"cuisine":"Indian",			
+					"recipe":" ", 
+					"recipe_links":[""],
+					"groceries":{"indian":"radish, sambar powder, onion, tomato,potato,tamarind,hing,curry leaves","american":" "},
+				"type":"vegetarian"
+			},
+			"dinner":{"name":"Dosa and coconut chutney",
+					"desc": "Dosa and coconut chutney ",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_links":[""],
+					"groceries":{"indian":"grated coconut","american":" "},
+				"type":"vegetarian"
+			}
+			},
+			{"breakfast":{"name":"English muffin Egg pizza",
+				"desc": "English muffin, Egg, pizza sauce",
+				"cuisine":"American",			
+				"recipe":"English muffin, bolied eggs and pizza sauce. Slice boiled eggs. Apply pizza sauce,sliced eggs on half muffin. Place shredded cheddar and toast it for few mins",
+				"recipe_links":["https://www.buzzfeed.com/deenashanker/healthy-easy-breakfasts-your-kids-will-love"],
+				"groceries":{"indian":"","american":"English muffin,Apples,Shredded Cheddar"},
+				"type":"vegetarian_egg"
+			},	
+			"lunch":{"name":"Capsicum/Green pepper rice and Bhoondi raita",
+					"desc": "Capsicum rice and Bhoondi raita",
+					"cuisine":"Indian",			
+					"recipe":" ", 
+					"recipe_links":["http://www.sailusfood.com/2006/05/16/capsicum-masala-rice/","http://www.sailusfood.com/2016/01/05/boondi-raita-recipe/"],
+					"groceries":{"indian":"capsicum/green pepper,hing,curry leaves,bhoondi,yogurt","american":" "},
+				"type":"vegetarian"
+			},
+			"dinner":{"name":"Roti and chicken quesdilla",
+					"desc": "Roti and chicken quesdilla ",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_links":[""],
+					"groceries":{"indian":"grated coconut","american":" "},
+				"type":"non-vegetarian"
+			}
+			}]			
+		},
+		{
+			"label":"week-2",
+			"week":[{"breakfast":{"name":"Roti and PB Rolls",
+				"desc": "Roti and PB Rolls",
+				"cuisine":"Indian",			
+				"recipe":"Warm Roti. Spread peanut butter on top. Add strawberry or bananas/chocolate chip",
+				"recipe_links":["https://www.buzzfeed.com/deenashanker/healthy-easy-breakfasts-your-kids-will-love"],
+				"groceries":{"indian":"Roti","american":"Peanut Butter,Banana"},
+				"type":"vegetarian"
+			},	
+			"lunch":{"name":"Coconut rice and taro root fry",
+					"desc": "Coconut rice and taro root fry ",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_links":["http://www.sharmispassions.com/2014/05/sprouts-fried-rice-recipe.html"],
+					"groceries":{"indian":"mango or drumstick, tamarind, onion, tomato, garlic, sesame oil,curry leaves, chilli/coriander/jeera powder","american":"shrimp"},
+				"type":"vegetarian"
+			},
+			"dinner":{"name":"Bread with Channa masala",
+					"desc": "Channa masala on top of toasted bread, garnished with onion",
+					"cuisine":"Indian",			
+					"recipe":" ",
+					"recipe_links":[""],
+					"groceries":{"indian":"soft wheat or multi grain bread, channa masala","american":""},
+				"type":"vegetarian"
+			}},
+			{"breakfast":{"name":"English muffin Apple",
+				"desc": "English muffin, apple and cheddar",
+				"cuisine":"American",			
+				"recipe":"English muffin, apple and cheddar. Peel apple skin and slice apples. Arrange on top of half muffin. Place shredded cheddar and toast it for few mins",
+				"recipe_links":["https://www.buzzfeed.com/deenashanker/healthy-easy-breakfasts-your-kids-will-love"],
+				"groceries":{"indian":"","american":"English muffin,Apples,Shredded Cheddar"},
+				"type":"vegetarian"
+			},	
+			"lunch":{"name":"Radish Sambar, potato fry2",
+					"desc": "Radish Sambar, potato fry",
+					"cuisine":"Indian",			
+					"recipe":" ", 
+					"recipe_links":[""],
+					"groceries":{"indian":"radish, sambar powder, onion, tomato,potato,tamarind,hing,curry leaves","american":" "},
+				"type":"vegetarian"
+			},
+			"dinner":{"name":"Dosa and coconut chutney2",
+					"desc": "Dosa and coconut chutney ",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_links":[""],
+					"groceries":{"indian":"grated coconut","american":" "},
+				"type":"vegetarian"
+			}
+			},
+			{"breakfast":{"name":"Banana,Granola pops",
+				"desc": "Banana,Granola pops",
+				"cuisine":"American",			
+				"recipe":"English muffin, apple and cheddar. Peel apple skin and slice apples. Arrange on top of half muffin. Place shredded cheddar and toast it for few mins",
+				"recipe_links":["https://www.buzzfeed.com/deenashanker/healthy-easy-breakfasts-your-kids-will-love"],
+				"groceries":{"indian":"","american":"Banana, Granola,Raisin"},
+				"type":"vegetarian"
+			},	
+			"lunch":{"name":"Sprouts fried rice and Gobi manchurian",
+					"desc": "Sprouts fried rice and Gobi manchurian",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_links":["http://www.sharmispassions.com/2014/05/sprouts-fried-rice-recipe.html","http://showmethecurry.com/appetizers/gobi-cauliflower-manchurian-dry.html"],
+					"groceries":{"indian":"","american":""},
+				"type":"non-vegetarian"
+			},
+			"dinner":{"name":"Dosa and coconut chutney2",
+					"desc": "Dosa and coconut chutney ",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_links":[""],
+					"groceries":{"indian":"grated coconut","american":" "}
+			}
+			}
+			]	
+		}
+	]
+}
+

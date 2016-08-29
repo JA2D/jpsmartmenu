@@ -1,0 +1,94 @@
+[
+	{ "sunday":{"breakfast":{"name":"Pancakes",
+				"desc": "Pancakes",
+				"cuisine":"American",			
+				"recipe":"",
+				"recipe_link":"",
+				"groceries":{"indian":"","american":"pancake mix, maple syrup"}
+			},	
+			"lunch":{"name":"Shrimp Mango curry",
+					"desc": "Shrimp and raw mango or Shrimp and drumstick",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_link":"",
+					"groceries":{"indian":"mango or drumstick, tamarind, onion, tomato, garlic, sesame oil,curry leaves, chilli/coriander/jeera powder","american":"shrimp"}
+			},
+			"dinner":{"name":"Upma",
+					"desc": "",
+					"cuisine":"Indian",			
+					"recipe":" ",
+					"recipe_link":"",
+					"groceries":{"indian":"wheat rava or semolina,coconut,mixed veggies","american":""}
+			}
+		},
+		"monday":{"breakfast":{"name":"Egg omelette",
+				"desc": "Egg omelette",
+				"cuisine":"American",			
+				"recipe":"",
+				"recipe_link":"",
+				"groceries":{"indian":"onion","american":"eggs"}
+			},	
+			"lunch":{"name":"Radish Sambar, potato fry",
+					"desc": "Radish Sambar, potato fry",
+					"cuisine":"Indian",			
+					"recipe":" ", 
+					"recipe_link":" ",
+					"groceries":{"indian":"radish, sambar powder, onion, tomato,potato,tamarind,hing,curry leaves","american":" "}
+			},
+			"dinner":{"name":"Dosa and coconut chutney",
+					"desc": "Dosa and coconut chutney ",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_link":"",
+					"groceries":{"indian":"grated coconut","american":" "}
+			}
+			}
+    },
+	{ "sunday":{"breakfast":{"name":"Pancakes2",
+				"desc": "Pancakes",
+				"cuisine":"American",			
+				"recipe":"",
+				"recipe_link":"",
+				"groceries":{"indian":"","american":"pancake mix, maple syrup"}
+			},	
+			"lunch":{"name":"Shrimp Mango curry2",
+					"desc": "Shrimp and raw mango or Shrimp and drumstick",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_link":"",
+					"groceries":{"indian":"mango or drumstick, tamarind, onion, tomato, garlic, sesame oil,curry leaves, chilli/coriander/jeera powder","american":"shrimp"}
+			},
+			"dinner":{"name":"Upma2",
+					"desc": "",
+					"cuisine":"Indian",			
+					"recipe":" ",
+					"recipe_link":"",
+					"groceries":{"indian":"wheat rava or semolina,coconut,mixed veggies","american":""}
+			}
+		},
+		"monday":{"breakfast":{"name":"Egg omelette2",
+				"desc": "Egg omelette",
+				"cuisine":"American",			
+				"recipe":"",
+				"recipe_link":"",
+				"groceries":{"indian":"onion","american":"eggs"}
+			},	
+			"lunch":{"name":"Radish Sambar, potato fry2",
+					"desc": "Radish Sambar, potato fry",
+					"cuisine":"Indian",			
+					"recipe":" ", 
+					"recipe_link":" ",
+					"groceries":{"indian":"radish, sambar powder, onion, tomato,potato,tamarind,hing,curry leaves","american":" "}
+			},
+			"dinner":{"name":"Dosa and coconut chutney2",
+					"desc": "Dosa and coconut chutney ",
+					"cuisine":"Indian",			
+					"recipe":"",
+					"recipe_link":"",
+					"groceries":{"indian":"grated coconut","american":" "}
+			}
+		}
+	}
+]
+
+

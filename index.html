@@ -1,0 +1,480 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Tomatoes
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20110301
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="smApp">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>JP's Smart Menu</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+    <link href="/css/sm-style.css" rel="stylesheet" type="text/css" media="screen" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<link rel="stylesheet" href="fa/css/font-awesome.min.css">    
+<!-- Latest compiled and minified JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- Angular scripts -->
+    <script src="javascript/controller.js"></script>
+   
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item first"><span><a href="#">Home</a></span></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Photos</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Links</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+	</div>
+	<div id="logo">
+		<h1><a href="#"> Smart Menu </a></h1>
+		<!--<p><em> Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a></em></p>-->
+	</div>
+	<hr />
+	<!-- end #logo -->
+	<div id="page" >
+		<div id="page-bgtop">
+			<div id="content">
+              
+           <div  ng-controller="smCtrl">
+                          
+               <!-- <table border="1" cellpadding="10">
+                                <tr ng-repeat="items in phones.phArr">
+                                    <td>{{items.name}}</td>
+                                    <td>{{items.snippet}}</td>
+                                    <td>{{items.age}}</td>
+                                    <td><div ng-repeat="oitems in items.owner">{{oitems.fname}},{{oitems.lname}}</div></td>
+                                </tr>
+                            </table>
+                -->
+               
+                         <table class="table">
+                              <thead>
+                                <tr>
+                                  <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                  <th>Sunday</th>
+                                  <th>Monday</th>
+                                  <th>Tuesday</th>
+                                  <th>Wednesday</th>   
+                                  <th>Thursday</th>  
+                                  <th>Friday</th>  
+                                  <th>Saturday</th>  
+                                </tr>
+                              </thead>
+                              <tbody>       
+                                <tr ng-repeat="items in menu.month">
+                                    <th>Week-{{$index + 1}}</th>
+                                    
+                                    <td  ng-repeat="witems in items.week" width="150">
+                                        <div class="card">
+                                          <div><span class="card-header label label-info">
+                                              <img src="images/Sunrise.png" alt="Breakfast" height="20" width="20"> 
+                                               <em class="xsmallTxt"> {{witems.breakfast.cuisine}}</em>
+                                              </span>
+                                          </div> 
+                                          <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4> 
+												<a data-toggle="tooltip" title="<img src='images/rec/{{witems.breakfast.image}}.jpg' />">
+												<small> {{witems.breakfast.name}}
+                                                </small></a>
+												<script>
+												$(function () {
+   
+													$('a[data-toggle="tooltip"]').tooltip({
+															animated: 'fade',
+															placement: 'bottom',
+															html: true
+														});
+														
+														});
+														</script>
+                                                   <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i>
+													<span ng-repeat="link in witems.breakfast.recipe_links">
+														<a href={{link}} target="_blank">
+														<i class="fa fa-external-link" aria-hidden="true"></i></a>
+													</span>
+                                                   </div>
+                                          </div>
+                                        </div>
+                                            <div><span class="card-header label label-info">
+                                              <img src="images/sun.png" alt="Lunch" height="20" width="20"> 
+                                                <em class="xsmallTxt"> {{witems.lunch.cuisine}}</em>
+                                              </span>
+                                          </div> 
+                                          <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small> {{witems.lunch.name}}
+                                                </small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i> 
+													<span ng-repeat="link in witems.lunch.recipe_links">
+														<a href={{link}} target="_blank">
+														<i class="fa fa-external-link" aria-hidden="true"></i></a>
+													</span>
+											   </div>
+                                          </div>
+                                        </div>
+                                            <div><span class="card-header label label-info">
+                                              <img src="images/clear-night.png" alt="Dinner" height="20" width="20"> 
+                                              <em class="xsmallTxt"> {{witems.dinner.cuisine}}</em>
+                                              </span>
+                                          </div> 
+                                          <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small> {{witems.dinner.name}}
+                                                </small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true" data-toggle="modal" data-target="#rgModal"></i>
+													<span ng-repeat="link in witems.dinner.recipe_links">
+														<a href={{link}} target="_blank">
+														<i class="fa fa-external-link" aria-hidden="true"></i></a>
+													</span>
+											   </div>
+														<!-- Modal -->
+															<div id="rgModal" class="modal fade" role="dialog">
+															  <div class="modal-dialog">
+
+																<!-- Modal content-->
+																<div class="modal-content">
+																  <div class="modal-header">
+																	<button type="button" class="close" data-dismiss="modal">&times;</button>
+																	<h4 class="modal-title">Recipe</h4>
+																  </div>
+																  <div class="modal-body">
+																	<p>{{witems.dinner.recipe}}</p>
+																  </div>
+																  <div class="modal-footer">
+																	<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+																  </div>
+																</div>
+
+															  </div>
+															</div>
+											</div>
+                                        </div>
+                                      </div>
+                                        
+                                      <!-- <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info"> {{items.sunday.lunch.cuisine}}</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small> {{items.sunday.lunch.name}}
+                                                </small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                       <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info"> {{items.sunday.dinner.cuisine}}</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small> {{items.sunday.dinner.name}}
+                                                </small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>-->
+                                    </td>
+                                   <!-- <td>
+                                        {{items.monday.breakfast.name}}<br/> 
+                                        {{items.monday.lunch.name}}<br/>  
+                                        {{items.monday.dinner.name}}  
+                                    </td>-->
+                                </tr>
+                           </tbody>
+                            </table>
+                        </div>
+               <div>
+                 
+                  <!--   <table class="table" >
+                              <thead>
+                                <tr>
+                                  <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                                  <th>Sunday</th>
+                                  <th>Monday</th>
+                                  <th>Tuesday</th>
+                                  <th>Wednesday</th>   
+                                  <th>Thursday</th>  
+                                  <th>Friday</th>  
+                                  <th>Saturday</th>  
+                                </tr>
+                              </thead>
+                              <tbody>                           
+                                 
+                            
+                                  <th scope="row">Week-1</th>
+                                  <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>shrimp/drumstick or shrimp,turnip,mango curry
+                                                </small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Sambar – Raddish and potato poriyal</small>
+                                                <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div></td>
+                                    
+                                  
+                                    
+                                  <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Variety – lemon rice and egg thokku</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div></td>
+                                  <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Dhal – Yellow moong , tuna poriyal</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div></td>   
+                                    <td>
+                                        <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Italian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Mushroom, potato pasta soup</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>
+                                     <td>
+                                        <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Curry - Rajma</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>
+                                     <td>
+                                        <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Chinese</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Sprouts Fried Rice and Gobi Manchurian</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Week-2</th>
+                                   <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>shrimp/drumstick or shrimp,turnip,mango curry
+                                                </small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>
+                                  <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Sambar – Raddish and potato poriyal</small>
+                                                <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div></td>
+                                  <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Variety – lemon rice and egg thokku</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div></td>
+                                  <td><div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Dhal – Yellow moong , tuna poriyal</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div></td>   
+                                    <td>
+                                        <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Italian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Mushroom, potato pasta soup</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>
+                                     <td>
+                                        <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Indian</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Curry - Rajma</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>
+                                     <td>
+                                        <div class="card">
+                                          <div><h4 class="card-header">
+                                              <span class="label label-info">Chinese</span></h4> 
+                                          </div> 
+                                       <div class="col-sm-18">
+                                          <div class="card-block" >
+                                             <h4 class="card-title"></h4>
+                                              <small>Sprouts Fried Rice and Gobi Manchurian</small>
+                                               <div><i title="Recipe and Grocery List" class="fa fa-sticky-note-o" aria-hidden="true"></i></div>
+                                          </div>
+                                      </div>
+                                      </div>
+                                    </td>                                 
+                                </tr>
+                                <tr>
+                                  <th scope="row">Week-3</th>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>                                 
+                                </tr>
+                                <tr>
+                                  <th scope="row">Week-4</th>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>
+                                  <td>Table cell</td>                                 
+                                </tr>
+                               
+                              </tbody>
+                            </table> -->
+                </div></div>
+			<!-- end #content -->
+			<div id="sidebar">
+				<ul>
+					<li>
+						<h2>Smart Menu</h2>
+						<p>Meal planning made easy.</p>
+					</li>
+					<li>
+						<h2>Menu </h2>
+						<ul>
+							<li><a href="#"></a><a href="#">Monthly</a></li>
+							<li><a href="#">Weekly</a></li>
+							
+						</ul>
+					</li>
+					<li>
+						<h2>Recipe</h2>
+						<ul>
+<!-- 							<li><a href="#"></a><a href="#">Nec metus sed donec</a></li>
+							<li><a href="#">Magna lacus bibendum mauris</a></li> -->
+							
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- end #sidebar -->
+			<div style="clear: both;">&nbsp;</div>
+		</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+		<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+	</div>
+	<!-- end #footer -->
+</div>
+</body>
+</html>

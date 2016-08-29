@@ -1,0 +1,24 @@
+{
+  "phArr":[  { "name": "Nexus S",
+    "snippet": "Fast just got faster with Nexus S.",
+    "age": 0,
+	"owner": [{"fname":"john","lname":"Ksdf"},{"fname":"jack","lname":"Lfdf"}]
+    },
+    { "name": "Apple iPhone 4S (White) (8 GB)",
+    "snippet": "3.5 Inch Widescreen Diagonal",
+    "age": 1,
+	"owner": [{"fname":"john","lname":"Ksdf"},{"fname":"jack","lname":"Lfdf"}]
+    },
+    { "name": "Samsung Galaxy Core 2 (White)",
+    "snippet": "powerful 1.2 GHz Quad Core processor and Android 4.4 Kitkat Operating System",
+    "age": 2,
+	"owner": [{"fname":"john","lname":"Ksdf"},{"fname":"jack","lname":"Lfdf"}]
+    },
+    {
+    "name": "Micromax Canvas HD Plus A190, white gold",
+    "snippet": "4.76 GB for mass storage",
+    "age": 2,
+	"owner": [{"fname":"john","lname":"Ksdf"},{"fname":"jack","lname":"Lfdf"}]
+    }
+]
+}
